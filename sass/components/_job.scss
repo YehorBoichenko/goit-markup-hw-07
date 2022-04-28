@@ -1,0 +1,46 @@
+.job__section {
+  padding-top: 47px;
+}
+
+.job__title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+
+.image-list {
+  display: flex;
+}
+
+.image-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.image-list .list-item {
+  width: calc((100% - 90px) / 4);
+}
+
+.item {
+  position: relative;
+}
+
+.job__image-label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 27px 15px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-background-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}
