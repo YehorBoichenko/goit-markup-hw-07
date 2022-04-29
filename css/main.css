@@ -14,7 +14,7 @@ body {
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
   font-style: normal;
-  font-family: Roboto, sans-serif;
+  font-family: var(), sans-serif;
   letter-spacing: 0.03em;
 }
 
