@@ -2,7 +2,9 @@ body {
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
   font-style: normal;
-  font-family: var(main-font-family), sans-serif;
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.88;
   letter-spacing: 0.03em;
 }
 
@@ -33,28 +35,4 @@ svg {
   text-align: center;
   margin-top: 0px;
   margin-bottom: 50px;
-}
-
-.logo {
-  color: var(--accent-color);
-  font-family: Raleway, sans-serif;
-
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  margin-right: 93px;
-}
-
-.portfolio-title {
-  margin: 0;
-  display: none;
-}
-
-.main {
-  color: var(--primary-text-color);
-  background-color: var(--primary-background-color);
-  font-family: Roboto, sans-serif;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;
 }

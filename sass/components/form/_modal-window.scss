@@ -14,11 +14,10 @@
 }
 
 .modal {
-  height: 581px;
-  width: 528px;
   position: absolute;
   top: 50%;
   left: 50%;
+  padding: 40px;
   background-color: var(--primary-background-color);
   transform: translateX(-50%) translateY(-50%) translateZ(0);
   /* opacity: 1; */
@@ -66,10 +65,6 @@
   &:hover {
     fill: var(--accent-color);
   }
-}
-
-.modal-form {
-  padding: 40px;
 }
 
 .modal-form__title {

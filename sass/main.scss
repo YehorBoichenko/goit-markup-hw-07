@@ -14,14 +14,11 @@
 
 // Utils
 @import './utils/variables';
+@import './utils/visually-hidden';
 
 // BASE STYLES
 @import './base/base';
 @import './base/reset';
-@import './base/socials';
-
-// Vendors
-@import './vendors/vendors';
 
 // Layouts
 @import './layouts/header';
@@ -34,6 +31,7 @@
 @import './components/team';
 @import './components/clients';
 @import './components/form/modal-window';
+@import './components/socials';
 
 // Portfolio page
 @import './components/filters';

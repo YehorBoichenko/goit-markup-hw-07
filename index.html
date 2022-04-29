@@ -14,7 +14,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
@@ -167,8 +167,8 @@
       <section class="section-team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="our-team list">
-            <li class="team-member">
+          <ul class="team__list list">
+            <li class="team__item">
               <img
                 class="team-photo"
                 src="./images/team_card1.jpg"
@@ -176,9 +176,9 @@
                 width="270"
                 height="260"
               />
-              <div class="team-description">
-                <h3 class="title">Игорь Демьяненко</h3>
-                <p class="team-text">Product Designer</p>
+              <div class="team__group">
+                <h3 class="team__subtitle title">Игорь Демьяненко</h3>
+                <p class="team__subtext text">Product Designer</p>
                 <ul class="social-medias list">
                   <li class="social-medias__item">
                     <a
@@ -231,7 +231,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-member">
+            <li class="team__item">
               <img
                 class="team-photo"
                 src="./images/team_card2.jpg"
@@ -239,9 +239,9 @@
                 width="270"
                 height="260"
               />
-              <div class="team-description">
-                <h3 class="title">Ольга Репина</h3>
-                <p class="team-text">Frontend Developer</p>
+              <div class="team__group">
+                <h3 class="team__subtitle title">Ольга Репина</h3>
+                <p class="team__subtext text">Frontend Developer</p>
                 <ul class="social-medias list">
                   <li class="social-medias__item">
                     <a
@@ -294,7 +294,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-member">
+            <li class="team__item">
               <img
                 class="team-photo"
                 src="./images/team_card3.jpg"
@@ -302,9 +302,9 @@
                 width="270"
                 height="260"
               />
-              <div class="team-description">
-                <h3 class="title">Николай Тарасов</h3>
-                <p class="team-text">Marketing</p>
+              <div class="team__group">
+                <h3 class="team__subtitle title">Николай Тарасов</h3>
+                <p class="team__subtext text">Marketing</p>
                 <ul class="social-medias list">
                   <li class="social-medias__item">
                     <a
@@ -357,7 +357,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-member">
+            <li class="team__item">
               <img
                 class="team-photo"
                 src="./images/team_card4.jpg"
@@ -365,9 +365,9 @@
                 width="270"
                 height="260"
               />
-              <div class="team-description">
-                <h3 class="title">Михаил Ермаков</h3>
-                <p class="team-text">UI Designer</p>
+              <div class="team__group">
+                <h3 class="team__subtitle title">Михаил Ермаков</h3>
+                <p class="team__subtext text">UI Designer</p>
                 <ul class="social-medias list">
                   <li class="social-medias__item">
                     <a
@@ -513,15 +513,23 @@
           <address>
             <ul class="footer-contacts__list list">
               <li class="footer-contacts__item">
-                <a href="https://goo.gl/maps/ko31hHhUW7KVigs66" class="contact-item alt"
+                <a
+                  href="https://goo.gl/maps/ko31hHhUW7KVigs66"
+                  class="contacts__link link contacts__link--white contacts__link--small"
                   >г. Киев, пр-т Леси Украинки, 26</a
                 >
               </li>
               <li class="footer-contacts__item">
-                <a href="mailto:info@devstudio.com" class="contact-item">info@devstudio.com</a>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contacts__link link contacts__link--small"
+                  >info@devstudio.com</a
+                >
               </li>
               <li class="footer-contacts__item">
-                <a href="tel:+380961111111" class="contact-item">+38 096 111 11 11</a>
+                <a href="tel:+380961111111" class="contacts__link link contacts__link--small"
+                  >+38 096 111 11 11</a
+                >
               </li>
             </ul>
           </address>
