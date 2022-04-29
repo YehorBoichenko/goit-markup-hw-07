@@ -832,7 +832,7 @@ border: 1px solid var(--accent-color);
 
 .checkbox:checked+.customized-checkbox{
   border-color: var(--accent-color);
-  background-image: url(../images/icon\ check.svg);
+  background-image: url(../images/icons/check.svg);
   background-size: contain;
   background-origin: border-box;
   background-color: var(--accent-color);
