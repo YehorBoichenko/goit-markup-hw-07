@@ -65,6 +65,48 @@
             </a>
           </li>
         </ul>
+        <!-- Mobile menu -->
+        <button class="menu__button" type="button" data-menu-button aria-expanded="false">
+          <svg class="menu__icon" width="40" height="40">
+            <use class="menu__icon__open" href="./images/icons/Icons.svg#menu-icon-open"></use>
+            <use class="menu__icon__close" href="./images/icons/Icons.svg#menu-icon-close"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu" data-menu>
+          <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__list">
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="./index.html">Студия</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a class="mobile-menu__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="mobile-menu__contacts list">
+            <li class="mobile-menu__contact">
+              <a
+                class="mobile-menu__contact-link mobile-menu__contact-link--phone"
+                href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-menu__contact">
+              <a class="mobile-menu__contact-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__socials list">
+            <li class="mobile-menu__social"><a class="mobile-menu__social-link">Instagram</a></li>
+            <li class="mobile-menu__social"><a class="mobile-menu__social-link">Twitter</a></li>
+            <li class="mobile-menu__social"><a class="mobile-menu__social-link">Facebook</a></li>
+            <li class="mobile-menu__social"><a class="mobile-menu__social-link">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main class="main">
@@ -72,7 +114,7 @@
       <section class="section">
         <div class="container">
           <h1 class="portfolio-title">Список примеров работ</h1>
-          <ul class="filters-list">
+          <ul class="filters list">
             <li class="filter__item">
               <button type="button" class="filter__btn">Все</button>
             </li>
@@ -92,9 +134,10 @@
           <!-- Portfolio -->
           <ul class="portfolio__list">
             <li class="portfolio__item">
-              <a href="" class="card link">
+              <a href="" class="card__link">
                 <div class="card__overlay">
                   <img
+                    class="card__picture"
                     src="./images/project1.jpg"
                     alt="Пример веб-сайта"
                     width="370"
@@ -116,6 +159,7 @@
               <a href="" class="card link">
                 <div class="card__overlay">
                   <img
+                    class="card__picture"
                     src="./images/project2.jpg"
                     alt="Пример дизайн постера"
                     width="370"
@@ -137,6 +181,7 @@
               <a href="" class="card link">
                 <div class="card__overlay">
                   <img
+                    class="card__picture"
                     src="./images/project3.jpg"
                     alt="Логотип приложения ресторана"
                     width="370"
@@ -158,6 +203,7 @@
               <a href="" class="card link">
                 <div class="card__overlay">
                   <img
+                    class="card__picture"
                     src="./images/project4.jpg"
                     alt="Картинка наушников"
                     width="370"
@@ -179,6 +225,7 @@
               <a href="" class="card link">
                 <div class="card__overlay">
                   <img
+                    class="card__picture"
                     src="./images/project5.jpg"
                     alt="Пример дизайна двух коробок"
                     width="370"
@@ -200,6 +247,7 @@
               <a href="" class="card link">
                 <div class="card__overlay">
                   <img
+                    class="card__picture"
                     src="./images/project6.jpg"
                     alt="Пример дизайна веб-сайта"
                     width="370"
@@ -221,6 +269,7 @@
               <a href="" class="card link">
                 <div class="card__overlay">
                   <img
+                    class="card__picture"
                     src="./images/project7.jpg"
                     alt="Дизайн печтаного издания"
                     width="370"
@@ -241,7 +290,13 @@
             <li class="portfolio__item">
               <a href="" class="card link">
                 <div class="card__overlay">
-                  <img src="./images/project8.jpg" alt="Картинка ярлыка" width="370" height="400" />
+                  <img
+                    class="card__picture"
+                    src="./images/project8.jpg"
+                    alt="Картинка ярлыка"
+                    width="370"
+                    height="400"
+                  />
                   <p class="overlay__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -258,6 +313,7 @@
               <a href="" class="card link">
                 <div class="card__overlay">
                   <img
+                    class="card__picture"
                     src="./images/project9.jpg"
                     alt="Картинка ноутбука с примером дизайна приложения"
                     width="370"
@@ -381,5 +437,7 @@
         </form>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

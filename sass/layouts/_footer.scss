@@ -98,6 +98,10 @@
 .social-medias__container {
   margin-bottom: 60px;
   @media screen and(min-width:768px) {
+    margin-left: 165px;
+    margin-bottom: 0;
+  }
+  @media screen and(min-width:1200px) {
     margin-left: 70px;
     margin-bottom: 0;
   }
@@ -138,7 +142,8 @@
 }
 
 .footer-email__input {
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   margin-bottom: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -154,6 +159,11 @@
   &:focus {
     border: 1px solid var(--accent-color);
   }
+
+  @media screen and(min-width:768px) {
+    width: 450px;
+  }
+
   @media screen and(min-width:1200px) {
     margin-bottom: 0;
     margin-right: 12px;

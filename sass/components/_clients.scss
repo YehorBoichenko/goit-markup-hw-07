@@ -1,15 +1,31 @@
-.client__list {
+.grid {
   display: flex;
+
   flex-wrap: wrap;
   gap: 30px;
-  margin-top: 30px;
+}
+
+.client__item {
+  --item: 2;
+
+  @media screen and(min-width:768px) {
+    --item: 3;
+  }
+
+  @media screen and(min-width:1200px) {
+    --item: 6;
+  }
+}
+
+.grid__item {
+  flex-basis: calc((100% - var(--indent) * (var(--item) -1)) / var(--item));
 }
 
 .client__links {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 210px;
+  // width: 210px;
   height: 92px;
   color: #afb1b8;
   border: 1px solid #afb1b8;
