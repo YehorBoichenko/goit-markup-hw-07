@@ -5,7 +5,9 @@
 }
 
 .portfolio__item {
-  width: calc((100% - 60px) / 3);
+  // width: calc((100% - 60px) / 3);
+  width: 370px;
+  position: relative;
   border: 1px solid #eeeeee;
   &:not(:nth-child(3n)) {
     margin-right: 30px;

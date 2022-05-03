@@ -1,5 +1,8 @@
 .job {
-  padding-top: 47px;
+  padding-top: 0;
+  @media screen and(max-width:1199px) {
+    display: none;
+  }
 }
 
 .job__list {
