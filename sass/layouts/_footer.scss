@@ -3,9 +3,12 @@
 //   align-items: baseline;
 // }
 
-.footer__container {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer__container {
   @media screen and(min-width:768px) {
     display: flex;
     align-items: baseline;

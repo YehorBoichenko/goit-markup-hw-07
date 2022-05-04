@@ -79,7 +79,9 @@
                 <a class="mobile-menu__link" href="./index.html">Студия</a>
               </li>
               <li class="mobile-menu__item">
-                <a class="mobile-menu__link" href="./portfolio.html">Портфолио</a>
+                <a class="mobile-menu__link mobile-menu__link--current" href="./portfolio.html"
+                  >Портфолио</a
+                >
               </li>
               <li class="mobile-menu__item">
                 <a class="mobile-menu__link">Контакты</a>
@@ -116,7 +118,7 @@
           <h1 class="portfolio-title">Список примеров работ</h1>
           <ul class="filters list">
             <li class="filter__item">
-              <button type="button" class="filter__btn">Все</button>
+              <button type="button" class="filter__btn filter__btn--current">Все</button>
             </li>
             <li class="filter__item">
               <button type="button" class="filter__btn">Веб-сайты</button>
@@ -136,13 +138,37 @@
             <li class="portfolio__item">
               <a href="" class="card__link">
                 <div class="card__overlay">
-                  <img
-                    class="card__picture"
-                    src="./images/project1.jpg"
-                    alt="Пример веб-сайта"
-                    width="370"
-                    height="400"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/1x/portfolio1_lg.jpg 1x,
+                        ./images/desktop/portfolio1@2x_lg.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/1x/portfolio1_md.jpg 1x,
+                        ./images/tablet/portfolio1@2x_md.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/1x/portfolio1_sm.jpg 1x,
+                        ./images/mobile/portfolio1@2x_sm.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="card__picture"
+                      src="./images/mobile/1x/portfolio1_sm.jpg"
+                      alt="Пример веб-сайта"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="overlay__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -156,15 +182,39 @@
               </a>
             </li>
             <li class="portfolio__item">
-              <a href="" class="card link">
+              <a href="" class="card__link">
                 <div class="card__overlay">
-                  <img
-                    class="card__picture"
-                    src="./images/project2.jpg"
-                    alt="Пример дизайн постера"
-                    width="370"
-                    height="400"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/1x/portfolio2_lg.jpg 1x,
+                        ./images/desktop/portfolio2@2x_lg.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/1x/portfolio2_md.jpg 1x,
+                        ./images/tablet/portfolio2@2x_md.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/1x/portfolio2_sm.jpg 1x,
+                        ./images/mobile/portfolio2@2x_sm.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="card__picture"
+                      src="./images/mobile/1x/portfolio2_sm.jpg"
+                      alt="Пример дизайн постера"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="overlay__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -178,15 +228,39 @@
               </a>
             </li>
             <li class="portfolio__item">
-              <a href="" class="card link">
+              <a href="" class="card__link">
                 <div class="card__overlay">
-                  <img
-                    class="card__picture"
-                    src="./images/project3.jpg"
-                    alt="Логотип приложения ресторана"
-                    width="370"
-                    height="400"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/1x/portfolio3_lg.jpg 1x,
+                        ./images/desktop/portfolio3@2x_lg.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/1x/portfolio3_md.jpg 1x,
+                        ./images/tablet/portfolio3@2x_md.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/1x/portfolio3_sm.jpg 1x,
+                        ./images/mobile/portfolio3@2x_sm.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="card__picture"
+                      src="./images/mobile/1x/portfolio3_sm.jpg"
+                      alt="Логотип приложения ресторана"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="overlay__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -200,15 +274,39 @@
               </a>
             </li>
             <li class="portfolio__item">
-              <a href="" class="card link">
+              <a href="" class="card__link">
                 <div class="card__overlay">
-                  <img
-                    class="card__picture"
-                    src="./images/project4.jpg"
-                    alt="Картинка наушников"
-                    width="370"
-                    height="400"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/1x/portfolio4_lg.jpg 1x,
+                        ./images/desktop/portfolio4@2x_lg.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/1x/portfolio4_md.jpg 1x,
+                        ./images/tablet/portfolio4@2x_md.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/1x/portfolio4_sm.jpg 1x,
+                        ./images/mobile/portfolio4@2x_sm.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="card__picture"
+                      src="./images/mobile/1x/portfolio4_sm.jpg"
+                      alt="Картинка наушников"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="overlay__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -222,15 +320,39 @@
               </a>
             </li>
             <li class="portfolio__item">
-              <a href="" class="card link">
+              <a href="" class="card__link">
                 <div class="card__overlay">
-                  <img
-                    class="card__picture"
-                    src="./images/project5.jpg"
-                    alt="Пример дизайна двух коробок"
-                    width="370"
-                    height="400"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/1x/portfolio5_lg.jpg 1x,
+                        ./images/desktop/portfolio5@2x_lg.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/1x/portfolio5_md.jpg 1x,
+                        ./images/tablet/portfolio5@2x_md.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/1x/portfolio5_sm.jpg 1x,
+                        ./images/mobile/portfolio5@2x_sm.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="card__picture"
+                      src="./images/mobile/1x/portfolio5_sm.jpg"
+                      alt="Пример дизайна двух коробок"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="overlay__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -244,15 +366,39 @@
               </a>
             </li>
             <li class="portfolio__item">
-              <a href="" class="card link">
+              <a href="" class="card__link">
                 <div class="card__overlay">
-                  <img
-                    class="card__picture"
-                    src="./images/project6.jpg"
-                    alt="Пример дизайна веб-сайта"
-                    width="370"
-                    height="400"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/1x/portfolio6_lg.jpg 1x,
+                        ./images/desktop/portfolio6@2x_lg.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/1x/portfolio6_md.jpg 1x,
+                        ./images/tablet/portfolio6@2x_md.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/1x/portfolio6_sm.jpg 1x,
+                        ./images/mobile/portfolio6@2x_sm.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="card__picture"
+                      src="./images/mobile/1x/portfolio6_sm.jpg"
+                      alt="Пример дизайна веб-сайта"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="overlay__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -266,15 +412,39 @@
               </a>
             </li>
             <li class="portfolio__item">
-              <a href="" class="card link">
+              <a href="" class="card__link">
                 <div class="card__overlay">
-                  <img
-                    class="card__picture"
-                    src="./images/project7.jpg"
-                    alt="Дизайн печтаного издания"
-                    width="370"
-                    height="400"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/1x/portfolio7_lg.jpg 1x,
+                        ./images/desktop/portfolio7@2x_lg.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/1x/portfolio7_md.jpg 1x,
+                        ./images/tablet/portfolio7@2x_md.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/1x/portfolio7_sm.jpg 1x,
+                        ./images/mobile/portfolio7@2x_sm.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="card__picture"
+                      src="./images/mobile/1x/portfolio7_sm.jpg"
+                      alt="Дизайн печтаного издания"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="overlay__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -288,15 +458,39 @@
               </a>
             </li>
             <li class="portfolio__item">
-              <a href="" class="card link">
+              <a href="" class="card__link">
                 <div class="card__overlay">
-                  <img
-                    class="card__picture"
-                    src="./images/project8.jpg"
-                    alt="Картинка ярлыка"
-                    width="370"
-                    height="400"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/1x/portfolio8_lg.jpg 1x,
+                        ./images/desktop/portfolio8@2x_lg.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/1x/portfolio8_md.jpg 1x,
+                        ./images/tablet/portfolio8@2x_md.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/1x/portfolio8_sm.jpg 1x,
+                        ./images/mobile/portfolio8@2x_sm.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="card__picture"
+                      src="./images/mobile/1x/portfolio8_sm.jpg"
+                      alt="Картинка ярлыка"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="overlay__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -310,15 +504,39 @@
               </a>
             </li>
             <li class="portfolio__item">
-              <a href="" class="card link">
+              <a href="" class="card__link">
                 <div class="card__overlay">
-                  <img
-                    class="card__picture"
-                    src="./images/project9.jpg"
-                    alt="Картинка ноутбука с примером дизайна приложения"
-                    width="370"
-                    height="400"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/desktop/1x/portfolio9_lg.jpg 1x,
+                        ./images/desktop/portfolio9@2x_lg.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tablet/1x/portfolio9_md.jpg 1x,
+                        ./images/tablet/portfolio9@2x_md.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/mobile/1x/portfolio9_sm.jpg 1x,
+                        ./images/mobile/portfolio9@2x_sm.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      class="card__picture"
+                      src="./images/mobile/1x/portfolio9_sm.jpg"
+                      alt="Картинка ноутбука с примером дизайна приложения"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <p class="overlay__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения

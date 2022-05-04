@@ -141,3 +141,7 @@
   letter-spacing: 0.02em;
   color: #2196f3;
 }
+
+.mobile-menu__link--current {
+  color: var(--accent-color);
+}

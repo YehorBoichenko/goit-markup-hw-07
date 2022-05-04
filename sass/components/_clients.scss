@@ -18,7 +18,7 @@
 }
 
 .grid__item {
-  flex-basis: calc((100% - var(--indent) * (var(--item) -1)) / var(--item));
+  flex-basis: calc((100% - var(--indent) * (var(--item) - 1)) / var(--item));
 }
 
 .client__links {
